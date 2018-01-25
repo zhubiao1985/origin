@@ -1,0 +1,10 @@
+1.7
+Git的分支操作（branch）是区别于svn操作的主要的部分。
+git的几乎所有的操作都是针对含有.git文件（.git文件某种层面上可以说几乎是种“标识符”）的某一个具体的对象操作。在进行git的相关命令的操作的时候，记得一定要cd到具体的目的文件。
+
+git branch-->".master"(当前所在的分支为master)
+
+创建分支:git branch branch_name
+本地切换到这个分支： git checkout branch_name
+创建并直接切换到这个分支:git checkout -b branch_name
+分支合并，比如将分支develop合并到master分支： git checkout master-->git master develop
